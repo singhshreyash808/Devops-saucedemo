@@ -15,7 +15,7 @@ public class LoginTest {
 	    
 	        ChromeOptions options = new ChromeOptions();
 
-	        
+	        // Redirected to webdriver
 	        WebDriver driver = new RemoteWebDriver( options);
 
 	   
