@@ -12,7 +12,7 @@ public class LoginTest {
 
 	    public static void main(String[] args) throws MalformedURLException {
 
-	    
+	        // Configure Chrome browser options 
 	        ChromeOptions options = new ChromeOptions();
 
 	        // Redirected to webdriver
