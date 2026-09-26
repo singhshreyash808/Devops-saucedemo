@@ -13,5 +13,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/SHREYASH SINGH/Downloads/selenium-server-4.49.0.jar"/>
+<<<<<<< Updated upstream
 	<classpathentry kind="output" path="target/classes"/>
+=======
+	<classpathentry kind="output" path="bin"/>
+>>>>>>> Stashed changes
 </classpath>
