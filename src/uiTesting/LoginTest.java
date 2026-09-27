@@ -18,7 +18,7 @@ public class LoginTest {
 	        // Redirected to webdriver
 	        WebDriver driver = new RemoteWebDriver( options);
 
-	   
+	        // Navigate the browser to the Google homepage
 	        driver.get("https://www.google.com");
 
 	        // Print page title
