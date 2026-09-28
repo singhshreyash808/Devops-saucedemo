@@ -14,7 +14,7 @@ public class BikeLightButtonTest {
 		        driver.get("https://www.saucedemo.com/");
 		        driver.manage().window().maximize();
 
-		        // Login
+		        
 		        driver.findElement(By.id("user-name"))
 		                .sendKeys("error_user");
 
@@ -24,7 +24,7 @@ public class BikeLightButtonTest {
 		        driver.findElement(By.id("login-button"))
 		                .click();
 
-		        // Click Bike Light Add to Cart
+		       
 		        driver.findElement(By.id("add-to-cart-sauce-labs-bike-light"))
 		                .click();
 
