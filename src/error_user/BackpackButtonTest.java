@@ -16,7 +16,7 @@ public class BackpackButtonTest {
 		        driver.get("https://www.saucedemo.com/");
 		        driver.manage().window().maximize();
 
-		        // Login
+		        
 		        driver.findElement(By.id("user-name"))
 		                .sendKeys("error_user");
 
