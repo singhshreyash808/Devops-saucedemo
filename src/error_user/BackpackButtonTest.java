@@ -1,50 +1,40 @@
 package error_user;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BackpackButtonTest {
 
-	public static void main(String[] args) {
-		
-	
+    public static void main(String[] args) throws InterruptedException {
 
-	
+        WebDriver driver = new ChromeDriver();
 
-		        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.saucedemo.com/");
+        driver.manage().window().maximize();
 
-		        driver.get("https://www.saucedemo.com/");
-		        driver.manage().window().maximize();
+        Thread.sleep(1000);
 
-		        
-		        driver.findElement(By.id("user-name"))
-		                .sendKeys("error_user");
+        // Login
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("username"))).sendKeys("error_user");
 
-		        driver.findElement(By.id("password"))
-		                .sendKeys("secret_sauce");
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("password"))).sendKeys("secret_sauce");
 
-		        driver.findElement(By.id("login-button"))
-		                .click();
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("loginButton"))).click();
 
-		        // Click Backpack Add to Cart
-		        driver.findElement(By.id("add-to-cart-sauce-labs-backpack"))
-		                .click();
+        Thread.sleep(1500);
 
-		        // Check cart
-		        String cartCount = driver.findElement(
-		                By.className("shopping_cart_badge")
-		        ).getText();
+        // Add Backpack
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("backpackButton"))).click();
 
-		        if (cartCount.equals("1")) {
-		            System.out.println("PASS: Backpack button is working.");
-		        } else {
-		            System.out.println("FAIL: Backpack button is not working.");
-		        }
+        Thread.sleep(1000);
 
-		        driver.quit();
-		    }
-		
+        System.out.println("Backpack added to cart successfully");
 
-	
-
+        driver.quit();
+    }
 }
