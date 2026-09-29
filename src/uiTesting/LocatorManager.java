@@ -4,9 +4,9 @@ import java.io.*;
 
 public class LocatorManager {
 
-	public static void main(String[] args) {
+	
 		// TODO Auto-generated method stub
-		Properties pr = new Properties();
+		static Properties pr = new Properties();
 		static {
 			
 			try {
@@ -14,21 +14,22 @@ public class LocatorManager {
 			
 		
 			pr.load(fs);
+			fs.close();
 		}
 			catch(IOException e) {
 				
-			return new RuntimeException("File Not found");
+			throw new RuntimeException("File Not found");
 			
 			}
-			}
+			
+		}
 		
-		
-		public static String getXpath(String key) {
+		public String getXpath(String key) {
 			
 			return pr.getProperty(key);
 		}
 
-	}
 	
+
 
 }
