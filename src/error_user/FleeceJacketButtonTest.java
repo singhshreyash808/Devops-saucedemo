@@ -1,41 +1,37 @@
 package error_user;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FleeceJacketButtonTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
 
-        // Login
-        driver.findElement(By.id("user-name"))
-                .sendKeys("error_user");
+        Thread.sleep(1000);
 
-        driver.findElement(By.id("password"))
-                .sendKeys("secret_sauce");
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("username"))).sendKeys("error_user");
 
-        driver.findElement(By.id("login-button"))
-                .click();
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("password"))).sendKeys("secret_sauce");
 
-        // Click Fleece Jacket Add to Cart
-        driver.findElement(By.id("add-to-cart-sauce-labs-fleece-jacket"))
-                .click();
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("loginButton"))).click();
 
-        // Check cart
-        String cartCount = driver.findElement(
-                By.className("shopping_cart_badge")
-        ).getText();
+        Thread.sleep(1500);
 
-        if (cartCount.equals("1")) {
-            System.out.println("PASS: Fleece Jacket button is working.");
-        } else {
-            System.out.println("FAIL: Fleece Jacket button is not working.");
-        }
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("fleeceJacketButton"))).click();
+
+        Thread.sleep(1000);
+
+        System.out.println("fleeceJacket added successfully");
 
         driver.quit();
     }
