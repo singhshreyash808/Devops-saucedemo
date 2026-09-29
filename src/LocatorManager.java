@@ -1,24 +1,28 @@
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class LocatorManager {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Properties pr = new Properties();
-		static {
-			
+	
+		
+		static Properties pr = new Properties();
+		
+		static {	
 			try {
-			FileInputStream fs =new FileInputStream("D:\\CRCDevops\\Xpath.Properties");
+			FileInputStream fs =new FileInputStream("D:\\CRCDevops\\Devops-saucedemo\\Xpath.Properties");
 			
 		
 			pr.load(fs);
 		}
 			catch(IOException e) {
 				
-			return new RuntimeException("File Not found");
+			throw new RuntimeException("File Not found");
 			
 			}
-			}
+			
+		}
+			
 		
 		
 		public static String getXpath(String key) {
@@ -26,7 +30,7 @@ public class LocatorManager {
 			return pr.getProperty(key);
 		}
 
-	}
+	
 	
 
 }
