@@ -15,7 +15,7 @@ public class LoginTest {
 	        // Configure Chrome browser options 
 	        ChromeOptions options = new ChromeOptions();
 
-	        // Redirected to webdriver
+	     // Initialize RemoteWebDriver with the configured options
 	        WebDriver driver = new RemoteWebDriver( options);
 
 	        // Navigate the browser to the Google homepage
