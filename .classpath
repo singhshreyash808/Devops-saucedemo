@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/ratho/Downloads/selenium-server-4.49.0.jar"/>
-=======
-	<classpathentry kind="lib" path="C:/Users/SHREYASH SINGH/Downloads/selenium-server-4.49.0.jar"/>
->>>>>>> 377b46be21bf5b0ec0ae386aa6176fabc912a26e
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
