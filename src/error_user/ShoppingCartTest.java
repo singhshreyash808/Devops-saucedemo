@@ -1,10 +1,10 @@
-package error_user;
+package uiTesting;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FleeceJacketButtonTest {
+public class ShoppingCartTest {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -15,8 +15,9 @@ public class FleeceJacketButtonTest {
 
         Thread.sleep(1000);
 
+        // Login
         driver.findElement(By.xpath(
-                PropertiesManager.getProperty("username"))).sendKeys("error_user");
+                PropertiesManager.getProperty("username"))).sendKeys("standard_user");
 
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("password"))).sendKeys("secret_sauce");
@@ -26,12 +27,21 @@ public class FleeceJacketButtonTest {
 
         Thread.sleep(1500);
 
+        // Add product
         driver.findElement(By.xpath(
-                PropertiesManager.getProperty("fleeceJacketButton"))).click();
+                PropertiesManager.getProperty("backpackButton"))).click();
 
-        Thread.sleep(1000);
+        // Open cart
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("shoppingCart"))).click();
 
-        System.out.println("fleeceJacket added successfully");
+        Thread.sleep(1500);
+
+        if (driver.getCurrentUrl().contains("cart.html")) {
+            System.out.println("Shopping Cart opened successfully");
+        } else {
+            System.out.println("Shopping Cart failed");
+        }
 
         driver.quit();
     }
