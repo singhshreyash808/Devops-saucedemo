@@ -1,10 +1,9 @@
 package error_user;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ShoppingCartTest {
+public class RemoveProductTest {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -17,7 +16,7 @@ public class ShoppingCartTest {
 
         // Login
         driver.findElement(By.xpath(
-                PropertiesManager.getProperty("username"))).sendKeys("error_user");
+                PropertiesManager.getProperty("username"))).sendKeys("standard_user");
 
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("password"))).sendKeys("secret_sauce");
@@ -27,21 +26,19 @@ public class ShoppingCartTest {
 
         Thread.sleep(1500);
 
-        // Add product
+        // Add Backpack
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("backpackButton"))).click();
 
-        // Open cart
+        Thread.sleep(1000);
+
+        // Remove Backpack
         driver.findElement(By.xpath(
-                PropertiesManager.getProperty("shoppingCart"))).click();
+                PropertiesManager.getProperty("removeBackpack"))).click();
 
-        Thread.sleep(1500);
+        Thread.sleep(1000);
 
-        if (driver.getCurrentUrl().contains("cart.html")) {
-            System.out.println("Shopping Cart opened successfully");
-        } else {
-            System.out.println("Shopping Cart failed");
-        }
+        System.out.println("Product removed successfully");
 
         driver.quit();
     }
