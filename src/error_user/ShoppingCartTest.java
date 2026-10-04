@@ -17,7 +17,7 @@ public class ShoppingCartTest {
 
         // Login
         driver.findElement(By.xpath(
-                PropertiesManager.getProperty("username"))).sendKeys("standard_user");
+                PropertiesManager.getProperty("username"))).sendKeys("error_user");
 
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("password"))).sendKeys("secret_sauce");
