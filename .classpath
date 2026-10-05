@@ -6,6 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/shrey/Downloads/selenium-java-4.48.0/selenium-remote-driver-4.48.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shrey/Downloads/selenium-java-4.48.0/selenium-safari-driver-4.48.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shrey/Downloads/selenium-java-4.48.0/selenium-safari-driver-4.48.0-sources.jar"/>
@@ -79,5 +80,8 @@
 	<classpathentry kind="lib" path="C:/Users/shrey/Downloads/selenium-java-4.48.0/auto-service-annotations-1.1.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shrey/Downloads/selenium-java-4.48.0/byte-buddy-1.18.11.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shrey/Downloads/selenium-java-4.48.0/byte-buddy-1.18.11-sources.jar"/>
+=======
+	<classpathentry kind="lib" path="C:/Users/shrey/Downloads/selenium-server-4.49.0 (1).jar"/>
+>>>>>>> e0f6fa87e907451e63e07c1712262f6a14f96ab9
 	<classpathentry kind="output" path="bin"/>
 </classpath>

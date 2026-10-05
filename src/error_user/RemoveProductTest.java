@@ -1,10 +1,9 @@
 package error_user;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FleeceJacketButtonTest {
+public class RemoveProductTest {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -15,8 +14,9 @@ public class FleeceJacketButtonTest {
 
         Thread.sleep(1000);
 
+        // Login
         driver.findElement(By.xpath(
-                PropertiesManager.getProperty("username"))).sendKeys("error_user");
+                PropertiesManager.getProperty("username"))).sendKeys("standard_user");
 
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("password"))).sendKeys("secret_sauce");
@@ -26,12 +26,19 @@ public class FleeceJacketButtonTest {
 
         Thread.sleep(1500);
 
+        // Add Backpack
         driver.findElement(By.xpath(
-                PropertiesManager.getProperty("fleeceJacketButton"))).click();
+                PropertiesManager.getProperty("backpackButton"))).click();
 
         Thread.sleep(1000);
 
-        System.out.println("fleeceJacket added successfully");
+        // Remove Backpack
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("removeBackpack"))).click();
+
+        Thread.sleep(1000);
+
+        System.out.println("Product removed successfully");
 
         driver.quit();
     }
