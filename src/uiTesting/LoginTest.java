@@ -15,10 +15,17 @@ public class LoginTest {
 	        // Configure Chrome browser options 
 	        ChromeOptions options = new ChromeOptions();
 
+<<<<<<< HEAD
     	    // Initialize RemoteWebDriver with the configured options
 	        WebDriver driver = new RemoteWebDriver( options);
 
 	        // Navigate to Google homepage
+=======
+	     // Initialize RemoteWebDriver with the configured options
+	        WebDriver driver = new RemoteWebDriver( options);
+
+	        // Navigate the browser to the Google homepage
+>>>>>>> hreya
 	        driver.get("https://www.google.com");
 
 	        // Print page title
