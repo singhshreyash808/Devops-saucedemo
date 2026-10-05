@@ -12,13 +12,10 @@ public class loginvisual_user {
         Thread.sleep(3000);
         driver.findElement(By.id("user-name")).clear();
         driver.findElement(By.id("user-name")).sendKeys("visual_user");
-
         driver.findElement(By.id("password")).clear();
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         Thread.sleep(3000);
-   
         driver.findElement(By.id("login-button")).click();
-
         // Check result
         if (driver.getCurrentUrl().contains("inventory.html")) {
             System.out.println("Result: PASS");
