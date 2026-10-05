@@ -1,10 +1,9 @@
 package error_user;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ShoppingCartTest {
+public class CheckoutTest {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -17,7 +16,7 @@ public class ShoppingCartTest {
 
         // Login
         driver.findElement(By.xpath(
-                PropertiesManager.getProperty("username"))).sendKeys("error_user");
+                PropertiesManager.getProperty("username"))).sendKeys("standard_user");
 
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("password"))).sendKeys("secret_sauce");
@@ -35,13 +34,31 @@ public class ShoppingCartTest {
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("shoppingCart"))).click();
 
+        Thread.sleep(1000);
+
+        // Checkout
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("checkoutButton"))).click();
+
+        Thread.sleep(1000);
+
+        // Enter customer details
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("firstName"))).sendKeys("Shreyash");
+
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("lastName"))).sendKeys("Singh");
+
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("postalCode"))).sendKeys("201001");
+
+        // Continue
+        driver.findElement(By.xpath(
+                PropertiesManager.getProperty("checkoutContinue"))).click();
+
         Thread.sleep(1500);
 
-        if (driver.getCurrentUrl().contains("cart.html")) {
-            System.out.println("Shopping Cart opened successfully");
-        } else {
-            System.out.println("Shopping Cart failed");
-        }
+        System.out.println("Checkout information submitted successfully");
 
         driver.quit();
     }

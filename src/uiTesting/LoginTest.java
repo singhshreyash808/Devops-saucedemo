@@ -24,7 +24,7 @@ public class LoginTest {
 	        // Print page title
 	        System.out.println("Page Title: " + driver.getTitle());
 
-	        // Close browser
+	        // Close the browser session
 	        driver.quit();
 	    }
 	}
