@@ -1,11 +1,11 @@
-package standard_user;
+package visual_user;
 
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class StandardUserLoginTest {
+public class visual_login{
 
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new EdgeDriver();
@@ -13,7 +13,7 @@ public class StandardUserLoginTest {
         driver.get("https://www.saucedemo.com/");
         Thread.sleep(3000);
         driver.findElement(By.id("user-name")).clear();
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+        driver.findElement(By.id("user-name")).sendKeys("visual_user");
 
         driver.findElement(By.id("password")).clear();
         driver.findElement(By.id("password")).sendKeys("secret_sauce");

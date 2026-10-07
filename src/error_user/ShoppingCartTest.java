@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package error_user;
 =======
 package uiTesting;
 >>>>>>> hreya
+=======
+package error_user;
+>>>>>>> visual_user
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,10 +26,14 @@ public class ShoppingCartTest {
         // Login
         driver.findElement(By.xpath(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 PropertiesManager.getProperty("username"))).sendKeys("error_user");
 =======
                 PropertiesManager.getProperty("username"))).sendKeys("standard_user");
 >>>>>>> hreya
+=======
+                PropertiesManager.getProperty("username"))).sendKeys("standard_user");
+>>>>>>> visual_user
 
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("password"))).sendKeys("secret_sauce");

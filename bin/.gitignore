@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /ErrorUserLogin.class
 /LocatorManager.class
 /Program1.class
@@ -8,6 +9,12 @@
 >>>>>>> e0f6fa87e907451e63e07c1712262f6a14f96ab9
 /error_user/
 =======
+=======
+/visual_user/
+/error_user/
+/performance_glitch_user/
+/standard_user/
+>>>>>>> visual_user
 /uiTesting/
 >>>>>>> 85e5137734869d1791f76e67d55c06cbffc56388
 /problem_user/
