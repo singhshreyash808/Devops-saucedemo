@@ -1,0 +1,55 @@
+[33m2d08457[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mvisual_user[m[33m)[m HEAD@{0}: checkout: moving from master to visual_user
+[33mb5900a9[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{1}: commit (merge): resolve the functionality of bin
+[33m347d1d6[m HEAD@{2}: commit: resolve the functionality of bin
+[33m3398093[m HEAD@{3}: checkout: moving from visual_user to master
+[33m2d08457[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mvisual_user[m[33m)[m HEAD@{4}: commit: changes done
+[33m9d3c93b[m[33m ([m[1;31morigin/visual_user[m[33m)[m HEAD@{5}: commit: Add the functionality of the visual user login test
+[33m76217c8[m HEAD@{6}: checkout: moving from master to visual_user
+[33m3398093[m HEAD@{7}: reset: moving to HEAD
+[33m3398093[m HEAD@{8}: checkout: moving from visual_user to master
+[33m76217c8[m HEAD@{9}: commit: Test the functionality of the login of the visual_user and correct password
+[33m3398093[m HEAD@{10}: checkout: moving from master to visual_user
+[33m3398093[m HEAD@{11}: commit (merge): Resolve merge conflict in SidebarAllItemsTest by keeping local working code
+[33mc2c5d65[m HEAD@{12}: checkout: moving from standard_user to master
+[33m4b20718[m[33m ([m[1;31morigin/standard_user[m[33m, [m[1;32mstandard_user[m[33m)[m HEAD@{13}: commit: Test the functionality of the About section in nthe sidebar of the standard_user
+[33m35fcc5f[m HEAD@{14}: commit: ADD Update in the checkouttest
+[33md689f76[m HEAD@{15}: commit: Update SidebarAllItemsTest with full execution code
+[33m7756aa3[m HEAD@{16}: commit: Test the functionality of the SIDEBAR ALLITEMS in the menubar
+[33m9c201d1[m HEAD@{17}: commit: Add Checkouttest script for standard_user
+[33m56f275c[m HEAD@{18}: checkout: moving from standard_user to standard_user
+[33m56f275c[m HEAD@{19}: checkout: moving from master to standard_user
+[33mc2c5d65[m HEAD@{20}: pull origin master: updating HEAD
+[33mc2c5d65[m HEAD@{21}: commit: Test to check the side menubar in that ALL ITEMS
+[33m73794f7[m HEAD@{22}: checkout: moving from standard_user to master
+[33m56f275c[m HEAD@{23}: reset: moving to HEAD
+[33m56f275c[m HEAD@{24}: pull origin master: Fast-forward
+[33m7c911ed[m HEAD@{25}: reset: moving to HEAD
+[33m7c911ed[m HEAD@{26}: commit: Test the functionality of Checkout in the standard_user with the complete checkout and to generate the pdf at last
+[33m3a2368c[m HEAD@{27}: checkout: moving from standard_user to standard_user
+[33m3a2368c[m HEAD@{28}: checkout: moving from master to standard_user
+[33m73794f7[m HEAD@{29}: reset: moving to 73794f7c18a60870d6ebf2b9029b6c70dfe5bd43
+[33m73794f7[m HEAD@{30}: commit: Automation test of the checkout process of the standard_user and later on confirming the complete checkout with generating the pdf at last
+[33m2df0f8d[m[33m ([m[1;31morigin/shreyash[m[33m)[m HEAD@{31}: reset: moving to origin/master
+[33mdce0737[m HEAD@{32}: reset: moving to HEAD
+[33mdce0737[m HEAD@{33}: commit: saving the local changes before pull
+[33m997ae89[m HEAD@{34}: pull origin master: Fast-forward
+[33mb4e059e[m HEAD@{35}: checkout: moving from standard_user to master
+[33m3a2368c[m HEAD@{36}: commit (merge): resolve conflict of the .classpath
+[33m2e932a4[m HEAD@{37}: commit: Test the functionality of the remove button after add to cart of particular item
+[33m6ed5dee[m HEAD@{38}: commit: Test the functionality of the add to cart for the standard_user
+[33m0c4c8fa[m[33m ([m[1;32mstandarduser[m[33m)[m HEAD@{39}: commit: ADD THE FUNCTIONALITY OF THE VALID LOGIN IN THE standard_user AND DIRECTED TO THE inevntory.html AUTOMATION TEST
+[33mb4e059e[m HEAD@{40}: checkout: moving from master to standard_user
+[33mb4e059e[m HEAD@{41}: pull origin master: Fast-forward
+[33m10ae493[m HEAD@{42}: reset: moving to HEAD
+[33m10ae493[m HEAD@{43}: checkout: moving from master to master
+[33m10ae493[m HEAD@{44}: checkout: moving from shreyajha to master
+[33mfc2536d[m[33m ([m[1;31morigin/shreyajha[m[33m, [m[1;32mshreyajha[m[33m)[m HEAD@{45}: commit: the filter menu examination done as on the basis of , Name(ATOZ),Name(ZtoA),Price(low to high),Price(high to low)
+[33m3d50c3c[m HEAD@{46}: commit: after the add to cart option when we click on the remove button then the item is removed from the cart
+[33md754afd[m HEAD@{47}: commit: add to cart click on the item in the visual_user as the item goes into the cart
+[33m696f830[m HEAD@{48}: commit: here in the add to cart clicked after that we click o the remove option on the item and that remove that item from the cart
+[33m0220613[m HEAD@{49}: commit: checked the add to cart option on the item and it show in the cart icon
+[33m3f2f976[m HEAD@{50}: commit: the login credentails check for thr visual_user for the login with valid credentials it work welland also with incorrect password , blank password
+[33m3ee6133[m HEAD@{51}: commit: here for the standard_user we have done the login , with the valid credentials,with blank password,and the incorrect password and for all of the case the result is pass
+[33m2bc77f7[m HEAD@{52}: commit: feat(visual-user): add visual_user test script and login test data
+[33m10ae493[m HEAD@{53}: checkout: moving from master to shreyajha
+[33m10ae493[m HEAD@{54}: clone: from https://github.com/singhshreyash808/Devops-saucedemo.git

@@ -1,5 +1,33 @@
+<<<<<<< HEAD
 /performance_glitch_user/
 /problem_user/
 /standard_user/
 /uiTesting/
 /visual_user.class
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+/ErrorUserLogin.class
+/LocatorManager.class
+/Program1.class
+/TestData/
+=======
+<<<<<<< HEAD
+>>>>>>> e0f6fa87e907451e63e07c1712262f6a14f96ab9
+/error_user/
+=======
+=======
+/visual_user/
+/error_user/
+/performance_glitch_user/
+/standard_user/
+>>>>>>> visual_user
+/uiTesting/
+>>>>>>> 85e5137734869d1791f76e67d55c06cbffc56388
+<<<<<<< HEAD
+/problem_user/
+=======
+/performance_glitch_user/
+/standard_user/
+>>>>>>> cd63acd (Added file bin/.gitignore)
+>>>>>>> cbcc3b0f38c51c21da3d5db0c2f81d63bc33163f

@@ -39,5 +39,7 @@ public class ProductDetailsTest {
         }
 
         driver.quit();
+        
+        
     }
 }
