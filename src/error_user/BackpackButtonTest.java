@@ -1,4 +1,4 @@
-package error_user;
+package src.error_user;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
