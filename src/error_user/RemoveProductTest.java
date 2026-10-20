@@ -30,8 +30,7 @@ public class RemoveProductTest {
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("backpackButton"))).click();
 
-        Thread.sleep(1000);
-
+        Thread.sleep(1500);
         // Remove Backpack
         driver.findElement(By.xpath(
                 PropertiesManager.getProperty("removeBackpack"))).click();
